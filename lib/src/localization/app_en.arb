@@ -1,5 +1,5 @@
 {
-  "appTitle": "firebase_todo_app",
+  "appTitle": "FirebaseTodoApp",
   "@appTitle": {
     "description": "The title of the application"
   }
