@@ -1,5 +1,4 @@
 name: firebase_todo_app
-description: A new Flutter project.
 
 # Prevent accidental publishing to pub.dev.
 publish_to: "none"
