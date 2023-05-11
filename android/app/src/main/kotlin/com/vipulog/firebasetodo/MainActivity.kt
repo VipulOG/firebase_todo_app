@@ -1,4 +1,4 @@
-package com.example.firebase_todo_app
+package com.vipulog.firebasetodo
 
 import io.flutter.embedding.android.FlutterActivity
 

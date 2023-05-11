@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.firebase_todo_app">
+    package="com.vipulog.firebasetodo">
    <application
-        android:label="firebase_todo_app"
+        android:label="FirebaseTodoApp"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
