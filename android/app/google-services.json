@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "775506977894",
+    "project_id": "fir-todoapp-d1adf",
+    "storage_bucket": "fir-todoapp-d1adf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775506977894:android:01ed96dbe05b8edf5f79a7",
+        "android_client_info": {
+          "package_name": "com.vipulog.firebasetodo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "775506977894-ml60sbe3orvgoevplbq2qq4vpb6jck6n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhNvvlGKm-07HMvtgalugvDGUULCjShn4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "775506977894-ml60sbe3orvgoevplbq2qq4vpb6jck6n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
