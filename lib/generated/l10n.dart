@@ -49,6 +49,31 @@ class S {
   static S? maybeOf(BuildContext context) {
     return Localizations.of<S>(context, S);
   }
+
+  /// `Settings`
+  String get pageSettingsTitle {
+    return Intl.message(
+      'Settings',
+      name: 'pageSettingsTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `{themeName, select, light{Light} dark{Dark} system{System} other{Other}} Theme`
+  String themeType(Object themeName) {
+    return Intl.message(
+      '${Intl.select(themeName, {
+            'light': 'Light',
+            'dark': 'Dark',
+            'system': 'System',
+            'other': 'Other'
+          })} Theme',
+      name: 'themeType',
+      desc: '',
+      args: [themeName],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

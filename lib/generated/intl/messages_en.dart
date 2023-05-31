@@ -20,6 +20,16 @@ typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'en';
 
+  static String m0(themeName) => "${Intl.select(themeName, {
+            'light': 'Light',
+            'dark': 'Dark',
+            'system': 'System',
+            'other': 'Other',
+          })} Theme";
+
   final messages = _notInlinedMessages(_notInlinedMessages);
-  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{};
+  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "pageSettingsTitle": MessageLookupByLibrary.simpleMessage("Settings"),
+        "themeType": m0
+      };
 }
