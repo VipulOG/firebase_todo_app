@@ -1,17 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import '../../generated/l10n.dart';
-import 'settings_controller.dart';
+import 'theme_provider.dart';
 
-class SettingsView extends StatelessWidget {
-  const SettingsView({super.key, required this.controller});
+class SettingsView extends HookConsumerWidget {
+  const SettingsView({super.key});
 
   static const routeName = '/settings';
 
-  final SettingsController controller;
-
   @override
-  Widget build(BuildContext context) {
+  Widget build(context, ref) {
+
+    setTheme(themeMode) {
+      ref.read(themeProvider.notifier).setThemeMode(themeMode!);
+    }
+
     return Scaffold(
       appBar: AppBar(
         title: Text(S.of(context).pageSettingsTitle),
@@ -19,8 +23,8 @@ class SettingsView extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: DropdownButton<ThemeMode>(
-          value: controller.themeMode,
-          onChanged: controller.updateThemeMode,
+          value: ref.watch(themeProvider),
+          onChanged: setTheme,
           items: [
             DropdownMenuItem(
               value: ThemeMode.system,
