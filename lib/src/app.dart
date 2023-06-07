@@ -40,8 +40,8 @@ class MyApp extends HookConsumerWidget {
       ],
       supportedLocales: S.delegate.supportedLocales,
       title: "FirebaseTodoApp",
-      theme: ThemeData(),
-      darkTheme: ThemeData.dark(),
+      theme: ThemeData(useMaterial3: true),
+      darkTheme: ThemeData.dark(useMaterial3: true),
       themeMode: ref.watch(themeProvider),
       onGenerateRoute: (RouteSettings routeSettings) {
         return MaterialPageRoute<void>(
