@@ -32,7 +32,7 @@ class MyApp extends HookConsumerWidget {
               case SettingsView.routeName:
                 return const SettingsView();
               default:
-                return const Center(child: CircularProgressIndicator());
+                return ErrorWidget("Not Found");
             }
           },
         );
