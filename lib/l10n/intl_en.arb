@@ -5,5 +5,7 @@
     "placeholders": {
       "themeName": {}
     }
-  }
+  },
+  "pageAuthTitle": "Authentication",
+  "pageAuthSignIn": "Sign In"
 }
