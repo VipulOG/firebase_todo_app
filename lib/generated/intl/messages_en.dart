@@ -31,7 +31,9 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "pageAuthSignIn": MessageLookupByLibrary.simpleMessage("Sign In"),
         "pageAuthTitle": MessageLookupByLibrary.simpleMessage("Authentication"),
-        "pageSettingsTitle": MessageLookupByLibrary.simpleMessage("Settings"),
-        "themeType": m0
+        "pageSettingsLogout": MessageLookupByLibrary.simpleMessage("Logout"),
+        "pageSettingsTheme": MessageLookupByLibrary.simpleMessage("Theme"),
+        "pageSettingsThemeType": m0,
+        "pageSettingsTitle": MessageLookupByLibrary.simpleMessage("Settings")
       };
 }

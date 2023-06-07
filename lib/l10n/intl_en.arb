@@ -1,7 +1,9 @@
 {
   "pageSettingsTitle": "Settings",
-  "themeType": "{themeName, select, light{Light} dark{Dark} system{System} other{Other}} Theme",
-  "@themeType": {
+  "pageSettingsTheme": "Theme",
+  "pageSettingsLogout": "Logout",
+  "pageSettingsThemeType": "{themeName, select, light{Light} dark{Dark} system{System} other{Other}} Theme",
+  "@pageSettingsThemeType": {
     "placeholders": {
       "themeName": {}
     }

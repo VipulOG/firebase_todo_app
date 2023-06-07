@@ -60,8 +60,28 @@ class S {
     );
   }
 
+  /// `Theme`
+  String get pageSettingsTheme {
+    return Intl.message(
+      'Theme',
+      name: 'pageSettingsTheme',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Logout`
+  String get pageSettingsLogout {
+    return Intl.message(
+      'Logout',
+      name: 'pageSettingsLogout',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `{themeName, select, light{Light} dark{Dark} system{System} other{Other}} Theme`
-  String themeType(Object themeName) {
+  String pageSettingsThemeType(Object themeName) {
     return Intl.message(
       '${Intl.select(themeName, {
             'light': 'Light',
@@ -69,7 +89,7 @@ class S {
             'system': 'System',
             'other': 'Other'
           })} Theme',
-      name: 'themeType',
+      name: 'pageSettingsThemeType',
       desc: '',
       args: [themeName],
     );
