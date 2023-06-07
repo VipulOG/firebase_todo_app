@@ -74,6 +74,26 @@ class S {
       args: [themeName],
     );
   }
+
+  /// `Authentication`
+  String get pageAuthTitle {
+    return Intl.message(
+      'Authentication',
+      name: 'pageAuthTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign In`
+  String get pageAuthSignIn {
+    return Intl.message(
+      'Sign In',
+      name: 'pageAuthSignIn',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

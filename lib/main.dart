@@ -29,7 +29,7 @@ void main() async {
   runApp(
     ProviderScope(
       overrides: [sharedPrefsProvider.overrideWithValue(prefs)],
-      child: const MyApp(),
+      child: MyApp(),
     ),
   );
 }
